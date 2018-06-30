@@ -1,0 +1,78 @@
+body {
+  background-color: #232323;
+  margin: 0;
+  font-family: "Montserrat", "Avenir", sans-serif;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  background-color: steelblue;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1.1;
+  padding: 20px 0;
+  margin: 0;
+}
+
+#colorDisplay {
+  font-size: 200%;
+  /* 2 times as big as the body font-size */
+}
+
+#stripe {
+  background-color: white;
+  height: 30px;
+  text-align: center;
+  color: black;
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
+  /* can only set a width when it is a block, although there's no content */
+}
+
+.selected {
+  background-color: steelblue;
+  color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.square {
+  width: 30%;
+  margin: 1.66%;
+  padding-bottom: 30%; /* or padding-top */
+  float: left;
+  border-radius: 15%;
+  transition: background-color 0.6s;
+  /* below is just to be cross browser friendly */
+  -webkit-transition: background-color 0.6s;
+  -moz-transition: background-color 0.6s;
+}
+
+button {
+  outline: none; /* to get rid of the slightly visible outline */
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  height: 100%; 
+  /*take up full height of its container*/
+  color: steelblue;
+  font-weight: 700;
+  font-size: inherit;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  /* transition: property to be transitioned and duration; */
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+button:hover {
+  color: white;
+  background-color: steelblue;
+}
